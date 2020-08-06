@@ -2,29 +2,19 @@
 
 ## What
 
-This application uses the
-
-[Web Speech API]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API
-
-to convert speech to text, it can also prompt you just in case you forget to speak. Just tap a button to start/stop the recording & conversion.
+This application uses the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)  to convert speech to text, it can also prompt you just in case you forget to speak. Just tap a button to start/stop the recording & conversion.
 
 
 
 ## Demo
 
-<img src="https://user-images.githubusercontent.com/53901027/89573971-09644580-d849-11ea-9b5b-26b297afb4fe.png" alt="Select an image and tap the button."  />
 
 
+| ![Screenshot from 2020-08-07 01-36-44](https://user-images.githubusercontent.com/53901027/89577794-d329c480-d84e-11ea-80b7-3f66912534c6.png) | ![Screenshot from 2020-08-07 01-36-53](https://user-images.githubusercontent.com/53901027/89577808-d9b83c00-d84e-11ea-9a17-2e81364a1c28.png) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Screenshot from 2020-08-07 01-37-05](https://user-images.githubusercontent.com/53901027/89577818-de7cf000-d84e-11ea-8d8a-a352501db9ae.png) | ![Screenshot from 2020-08-07 01-37-14](https://user-images.githubusercontent.com/53901027/89577828-e2a90d80-d84e-11ea-922f-d2636cdbb6bd.png) |
 
-<img src="https://user-images.githubusercontent.com/53901027/89574254-7b3c8f00-d849-11ea-9719-60ee657020e3.png" alt="Click the button and start speaking."  />
-
-
-
-<img src="https://user-images.githubusercontent.com/53901027/89576584-1b47e780-d84d-11ea-9b1f-2d498908ea5c.png" alt="It shows a little message when you don't speak for a while"  />
-
-
-
-<img src="https://user-images.githubusercontent.com/53901027/89574434-c191ee00-d849-11ea-968f-3816e9e146ee.png" alt="Click again to stop and an alert shows the spoken text"  />
+<img src="https://user-images.githubusercontent.com/53901027/89577841-e76dc180-d84e-11ea-8d58-e6309708f650.png" alt="Screenshot from 2020-08-07 01-37-43" style="zoom: 80%;" />
 
 
 
