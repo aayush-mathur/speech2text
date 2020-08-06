@@ -2,7 +2,7 @@
 
 ## What
 
-This application uses the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)  to convert speech to text, it can also prompt you just in case you forget to speak. Just tap a button to start/stop the recording & conversion.
+This application uses the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)  to convert speech to text; it can also prompt you just in case you forget to speak. Just tap a button to start/stop the recording & conversion.
 
 
 
