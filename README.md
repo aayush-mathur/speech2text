@@ -14,7 +14,7 @@ This application uses the [Web Speech API](https://developer.mozilla.org/en-US/d
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![Screenshot from 2020-08-07 01-37-05](https://user-images.githubusercontent.com/53901027/89577818-de7cf000-d84e-11ea-8d8a-a352501db9ae.png) | ![Screenshot from 2020-08-07 01-37-14](https://user-images.githubusercontent.com/53901027/89577828-e2a90d80-d84e-11ea-922f-d2636cdbb6bd.png) |
 
-<img src="https://user-images.githubusercontent.com/53901027/89577841-e76dc180-d84e-11ea-8d58-e6309708f650.png" alt="Screenshot from 2020-08-07 01-37-43" style="zoom: 80%;" />
+<img src="https://user-images.githubusercontent.com/53901027/89578410-b477fd80-d84f-11ea-8094-061fdd424ed9.png" alt="Screenshot from 2020-08-07 01-45-14" style="zoom:80%;" />
 
 
 
