@@ -3,19 +3,18 @@ var final_transcript = '';
 var recognizing = false;
 var timeoutInMilliseconds = 10000;
 var timeoutId;
+var isUserSpeaking = false;
+
+function upgrade() {
+    alert('Update to Latest Google Chrome.');
+}
 
 function startTimer(){
-//    console.log('Timer Started.');
     timeoutId = window.setTimeout(doInactive, timeoutInMilliseconds);
 }
 
 function doInactive(){
-    if(recognizing){
-       updatePrompt('You wanna say anything else?');
-    }
-    else{
-        stopTimer();
-    }
+   updatePrompt('You wanna say anything else?');
 }
 
 function resetTimer(){
@@ -25,7 +24,6 @@ function resetTimer(){
 
 function stopTimer(){
     window.clearTimeout(timeoutId);
-//    console.log('Timer Stopped.');
 }
 
 function updatePrompt(newPrompt){
@@ -33,15 +31,15 @@ function updatePrompt(newPrompt){
 }
 
 function startButton() {
-//    console.log('recognizing: ' + recognizing);
     if (recognizing) {
-        stopTimer();
+        isUserSpeaking = false;
         recognition.stop();
         return final_transcript;
     }
+    isUserSpeaking = true;
     final_transcript = '';
+    updatePrompt('Listening...');
     recognition.start();
-    startTimer();
 }
 
 function getRecognitionObject() {
@@ -50,17 +48,23 @@ function getRecognitionObject() {
     } else {
         recognition = new webkitSpeechRecognition();
         recognition.continuous = true;
-        recognition.interimResults = true;  //can set to false
-//        console.log(recognition);
+        recognition.interimResults = true;
 
         recognition.onstart = function () {
-            updatePrompt('Listening...');
             recognizing = true;
+            startTimer();
         }
 
         recognition.onend = function () {
-            updatePrompt('Click button to Start Recording');
+            if(isUserSpeaking){
+                final_transcript += ' ';
+                recognition.start();
+                return;
+            }
             recognizing = false;
+            stopTimer();
+            updatePrompt('Click button to Start Recording');
+            alert(final_transcript);
         }
 
         recognition.onresult = function (event) {
